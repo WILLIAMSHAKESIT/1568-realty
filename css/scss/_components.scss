@@ -234,6 +234,8 @@
             padding: 36px;
             display: flex;
             gap: 20px;
+            max-height: 450px;
+            overflow: auto;
             .slide{
                 width: fit-content;
                 .modal-slide{
