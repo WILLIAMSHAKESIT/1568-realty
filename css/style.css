@@ -280,10 +280,10 @@ Explorer 10-11 */
   height: 20px;
 }
 .owl-theme .owl-dots button.owl-dot.active span {
-  background-color: #000;
+  background-color: rgb(255, 227, 123);
 }
 .owl-theme .owl-dots button.owl-dot:hover span {
-  background-color: #000;
+  background-color: rgb(255, 227, 123);
 }
 
 .owl-theme .owl-nav button {
@@ -368,7 +368,7 @@ Explorer 10-11 */
 .card .footer .foot-content .price {
   min-width: 60px;
   height: 40px;
-  background: #000;
+  background: rgb(35, 74, 70);
   color: #fff;
   display: flex;
   align-items: center;
@@ -379,7 +379,7 @@ Explorer 10-11 */
 .scroll-top {
   width: 50px;
   height: 50px;
-  background-color: #fff;
+  background: linear-gradient(176deg, rgb(159, 129, 41) 0%, rgb(255, 227, 123) 46%, rgb(171, 132, 50) 100%);
   border: none;
   position: fixed;
   bottom: 20px;
@@ -392,12 +392,12 @@ Explorer 10-11 */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000000;
-  border: 1px solid #000;
+  color: rgb(35, 74, 70);
+  border: 1px solid rgb(35, 74, 70);
 }
 .scroll-top:hover {
-  background: #000;
-  color: #fff;
+  background: rgb(35, 74, 70);
+  color: #fffcf2;
 }
 
 .scroll-top div {
@@ -418,12 +418,13 @@ Explorer 10-11 */
 }
 .my-modal .modal-wrapper {
   min-height: 200px;
-  background-color: #fff;
+  background: linear-gradient(0deg, rgb(20, 46, 43), rgb(36, 75, 71));
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
+  color: #fffcf2;
 }
 .my-modal .modal-wrapper.sm {
   width: 500px;
@@ -438,7 +439,7 @@ Explorer 10-11 */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.0509803922);
+  border-bottom: 1px solid rgba(118, 118, 118, 0.21);
 }
 .my-modal .modal-wrapper .header.tag-sale {
   position: relative;
@@ -449,7 +450,7 @@ Explorer 10-11 */
           clip-path: polygon(0 0, 100% 0%, 100% 68%, 50% 100%, 0 68%);
   height: 75px;
   width: 70px;
-  background-color: #153122;
+  background-color: #397053;
   position: absolute;
   top: -1px;
   color: #fff;
@@ -460,6 +461,11 @@ Explorer 10-11 */
 .my-modal .modal-wrapper .header.tag-sale .title {
   margin-left: 90px;
 }
+.my-modal .modal-wrapper .header.tag-sale .title h2 {
+  background: linear-gradient(176deg, rgb(159, 129, 41) 0%, rgb(255, 227, 123) 46%, rgb(171, 132, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .my-modal .modal-wrapper .header.tag-rent {
   position: relative;
 }
@@ -469,7 +475,7 @@ Explorer 10-11 */
           clip-path: polygon(0 0, 100% 0%, 100% 68%, 50% 100%, 0 68%);
   height: 75px;
   width: 70px;
-  background-color: #6f2828;
+  background-color: #a34545;
   position: absolute;
   top: -1px;
   color: #fff;
@@ -479,6 +485,11 @@ Explorer 10-11 */
 }
 .my-modal .modal-wrapper .header.tag-rent .title {
   margin-left: 90px;
+}
+.my-modal .modal-wrapper .header.tag-rent .title h2 {
+  background: linear-gradient(176deg, rgb(159, 129, 41) 0%, rgb(255, 227, 123) 46%, rgb(171, 132, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .my-modal .modal-wrapper .header h3 {
   font-weight: 700;
@@ -518,7 +529,7 @@ Explorer 10-11 */
   font-weight: 600;
 }
 .my-modal .modal-wrapper .content .details .overview span {
-  color: rgba(0, 0, 0, 0.6588235294);
+  color: rgba(255, 255, 255, 0.755);
 }
 .my-modal .modal-wrapper .content .details .small-details {
   display: flex;
@@ -536,14 +547,16 @@ Explorer 10-11 */
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.3215686275);
+  border: 1px solid rgba(245, 216, 114, 0.11);
   border-radius: 5px;
-  color: rgba(0, 0, 0, 0.6196078431);
+  background: linear-gradient(176deg, rgb(159, 129, 41) 0%, rgb(255, 227, 123) 46%, rgb(171, 132, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 20px;
 }
 .my-modal .modal-wrapper .footer {
   padding: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.0509803922);
+  border-top: 1px solid rgba(118, 118, 118, 0.21);
 }
 .my-modal .modal-wrapper .footer .btn {
   max-width: 100px;
@@ -567,7 +580,7 @@ Explorer 10-11 */
 .mobile-nav .nav-bar {
   width: 264px;
   height: 100%;
-  background-color: #ffffff;
+  background: linear-gradient(0deg, rgb(20, 46, 43), rgb(36, 75, 71));
   position: absolute;
   right: 0;
 }
@@ -577,7 +590,7 @@ Explorer 10-11 */
 .mobile-nav .nav-bar .side-nav li {
   width: 100%;
   height: 50px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.0588235294);
+  border-bottom: 1px solid rgba(223, 223, 223, 0.083);
 }
 .mobile-nav .nav-bar .side-nav li a {
   width: 100%;
@@ -585,6 +598,21 @@ Explorer 10-11 */
   display: flex;
   align-items: center;
   padding: 0 30px;
+  color: #fffcf2;
+}
+
+.text-gold {
+  background: linear-gradient(176deg, rgb(159, 129, 41) 0%, rgb(255, 227, 123) 46%, rgb(171, 132, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-light {
+  color: #fffcf2;
+}
+
+.text-green {
+  color: #153122;
 }
 
 .container-mine {
@@ -600,7 +628,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.5725490196);
+  background: rgb(35, 74, 70);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -615,7 +643,7 @@ header .container-mine {
   width: 100%;
 }
 header .container-mine .top-logo {
-  width: 170px;
+  width: 56px;
 }
 header .container-mine ul.top-nav {
   width: -moz-fit-content;
@@ -672,6 +700,7 @@ main section#main-view {
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
+  background: linear-gradient(0deg, rgb(20, 46, 43), rgb(36, 75, 71));
 }
 main section#main-view .container-mine {
   display: flex;
@@ -690,12 +719,13 @@ main section#main-view .container-mine .left-side .stats .stat {
   text-align: center;
   width: 130px;
   height: 130px;
-  background: #ededed;
+  background: #335e5a;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
+  color: #fff;
 }
 main section#main-view .container-mine .left-side .stats .stat h3 {
   font-size: 25px;
@@ -756,14 +786,14 @@ main section#all-products .container-mine .toggle-buttons {
 main section#all-products .container-mine .toggle-buttons button {
   min-width: 150px;
   transition: 0.5s ease-in-out;
-  border: 2px solid #000;
+  border: 2px solid rgb(35, 74, 70);
 }
 main section#all-products .container-mine .toggle-buttons button.active {
-  background-color: #000;
+  background-color: rgb(35, 74, 70);
   color: #fff;
 }
 main section#all-products .container-mine .toggle-buttons button:hover {
-  background-color: #000;
+  background-color: rgb(35, 74, 70);
   color: #fff;
 }
 main section#all-products .container-mine .products-cotainer {
@@ -788,6 +818,9 @@ main section#all-products .container-mine .products-cotainer.sale .for-sale {
 main section#all-products .container-mine .products-cotainer.sale .for-rent {
   display: none;
 }
+main section#about-us {
+  background: #102624;
+}
 main section#about-us .container-mine .content .desc {
   display: flex;
   align-items: center;
@@ -807,7 +840,7 @@ main section#about-us .container-mine .content .img-wrapper .about-items {
   width: 80%;
   height: 170px;
   position: absolute;
-  background: #fff;
+  background: linear-gradient(0deg, rgb(20, 46, 43), rgb(36, 75, 71));
   left: 50%;
   transform: translateX(-50%);
   top: -80px;
@@ -840,12 +873,14 @@ main section#about-us .container-mine .content .img-wrapper .about-items .item .
   justify-content: center;
   font-size: 35px;
   transition: 0.5s ease-in-out;
+  color: #234a46;
 }
 main section#about-us .container-mine .content .img-wrapper .about-items .item .desc {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: unset;
+  color: #fff;
 }
 main section#about-us .container-mine .content .img-wrapper .about-items .item .desc div {
   width: 90%;
@@ -856,7 +891,7 @@ main section#about-us .container-mine .content .img-wrapper .about-items .item:h
   cursor: pointer;
 }
 main section#about-us .container-mine .content .img-wrapper .about-items .item:hover .icon-wrapper {
-  background: #000;
+  background: #2f625d;
   color: #fff;
 }
 main section#about-us .container-mine .content .img-wrapper img {
@@ -866,7 +901,7 @@ main section#about-us .container-mine .content .img-wrapper img {
 main section#faqs {
   height: -moz-fit-content;
   height: fit-content;
-  background: #000;
+  background: linear-gradient(0deg, rgb(20, 46, 43), rgb(36, 75, 71));
   color: #fff;
   position: relative;
 }
@@ -961,9 +996,9 @@ main section#contact .content .contact-item .contact-icon {
   align-items: center;
   justify-content: center;
   transition: 0.5s ease-in-out;
+  color: #234a46;
 }
 main section#contact .content .contact-item:hover .contact-icon {
-  background: #000;
   color: #fff;
 }
 main section#contact .content .contact-item:hover span {
@@ -1194,6 +1229,7 @@ footer .container-mine .contacts a:hover {
 @media (max-width: 527px) {
   main section#main-view .container-mine > div .tag-line h1 {
     font-size: 35px;
+    font-weight: 700;
   }
   main section#featured .container-mine .main-title {
     text-align: center;
@@ -1217,6 +1253,10 @@ footer .container-mine .contacts a:hover {
   main section#faqs::before {
     left: 0;
   }
+  footer {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   footer .container-mine {
     flex-direction: column;
   }
@@ -1226,7 +1266,7 @@ footer .container-mine .contacts a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 0;
+    padding: 15px 0;
   }
   .my-modal .modal-wrapper .header {
     flex-direction: column;

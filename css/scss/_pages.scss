@@ -4,7 +4,7 @@ header{
     position: fixed;
     top: 0;
     z-index: 100;
-    background: #ffffff92;
+    background: rgb(35, 74, 70);
     backdrop-filter: blur(10px);
     // border-bottom: 1px solid #eeeeee;
     .container-mine{
@@ -17,7 +17,7 @@ header{
         transform: translate(-50%,-50%);
         width: 100%;
         .top-logo{
-            width: 170px;
+            width: 56px;
         }   
         ul{
             &.top-nav{
@@ -73,6 +73,7 @@ main{
         &#main-view{
             height: fit-content;
             width: 100%;
+            background: linear-gradient(0deg, rgb(20 46 43),rgb(36 75 71));
             .container-mine{
                 display: flex;
                 align-items: center;
@@ -87,12 +88,13 @@ main{
                             text-align: center;
                             width: 130px;
                             height: 130px;
-                            background: #ededed;
+                            background: #335e5a;
                             display: flex;
                             align-items: center;
                             flex-direction: column;
                             justify-content: center;
                             border-radius: 10px;
+                            color: #fff;
                             h3{
                                 font-size: 25px;
                                 font-weight: 500;
@@ -161,13 +163,13 @@ main{
                     button{
                         min-width: 150px;
                         transition: .5s ease-in-out;
-                        border: 2px solid #000;
+                        border: 2px solid rgb(35, 74, 70);
                         &.active{
-                            background-color: #000;
+                            background-color: rgb(35, 74, 70);
                             color: #fff;
                         }
                         &:hover{
-                            background-color: #000;
+                            background-color: rgb(35, 74, 70);
                             color: #fff;
                         }
                     }
@@ -201,6 +203,7 @@ main{
             }
         }
         &#about-us{
+            background: #102624;
             .container-mine{
                 .content{
                     .desc{
@@ -221,7 +224,7 @@ main{
                             width: 80%;
                             height: 170px;
                             position: absolute;
-                            background: #fff;
+                            background: linear-gradient(0deg, rgb(20, 46, 43), rgb(36, 75, 71));
                             left: 50%;
                             transform: translateX(-50%);
                             top: -80px;
@@ -251,12 +254,14 @@ main{
                                     justify-content: center;
                                     font-size: 35px;
                                     transition: .5s ease-in-out;
+                                    color: #234a46;
                                 }
                                 .desc{
                                     display: flex;
                                     flex-direction: column;
                                     align-items: flex-start;
                                     margin-bottom: unset;
+                                    color: #fff;
                                     div{
                                         width: 90%;
                                         white-space: wrap;
@@ -266,7 +271,7 @@ main{
                                 &:hover{
                                     cursor: pointer;
                                     .icon-wrapper{
-                                        background: #000;
+                                        background: #2f625d;
                                         color: #fff;
                                     }
                                 }
@@ -282,7 +287,7 @@ main{
         }
         &#faqs{
             height: fit-content;
-            background: #000;
+            background: linear-gradient(0deg, rgb(20, 46, 43), rgb(36, 75, 71));
             color: #fff;
             position: relative;
             &::before{
@@ -378,10 +383,11 @@ main{
                         align-items: center;
                         justify-content: center;
                         transition: .5s ease-in-out;
+                        color: #234a46;
                     }
                     &:hover{
                         .contact-icon{
-                            background: #000;
+                            // background: ;
                             color: #fff;
                         }
                         span{
