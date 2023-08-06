@@ -3,10 +3,12 @@ header{
     height: 90px;
     position: fixed;
     top: 0;
-    z-index: 100;
-    background: rgb(35, 74, 70);
-    backdrop-filter: blur(10px);
-    // border-bottom: 1px solid #eeeeee;
+    z-index: 1000;
+    // background: rgb(35, 74, 70);
+    // backdrop-filter: blur(10px);
+    &.with-bg{
+        background: rgb(20, 46, 43);
+    }
     .container-mine{
         display: flex;
         align-items: center;
@@ -18,6 +20,7 @@ header{
         width: 100%;
         .top-logo{
             width: 56px;
+            cursor: pointer;
         }   
         ul{
             &.top-nav{
@@ -35,12 +38,12 @@ header{
                         position: absolute;
                         width: 0;
                         height: 2px;
-                        background-color: #000;
+                        background-color: #eaeaea;
                         bottom: 0;
                         transition: 0.2s ease-in-out;
                     }
                     &:hover{
-                        color: #000;
+                        color: rgb(255, 227, 123);
                         &::before{
                             width: 100%;
                         }
@@ -56,13 +59,13 @@ header{
 
 main{
     position: relative;
-    top: 90px;
+    // top: 90px;
     height: fit-content;
     section{
-        padding:80px 0;
+        padding:97px 0;
         .main-title{
             text-align: left;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             h1{
                 margin-bottom: 8px;
             }
@@ -74,6 +77,7 @@ main{
             height: fit-content;
             width: 100%;
             background: linear-gradient(0deg, rgb(20 46 43),rgb(36 75 71));
+            padding-top: 95px;
             .container-mine{
                 display: flex;
                 align-items: center;
@@ -111,11 +115,17 @@ main{
                     width: calc(100% / 2);
                     .tag-line{
                         margin-bottom: 70px;
+                        text-align: left;
                         h1{
                             text-align: left;
                             font-size: 50px;
                             font-weight: 600;
                             max-width:calc(100% - 35px);
+                        }
+                        span{
+                            text-align: left;
+                            color: #fff;
+                            font-size: 21px;
                         }
                     }
                     &.owl-carousel{
@@ -151,7 +161,7 @@ main{
             }
         }
         &#all-products{
-            background: #ebebeb;
+            background: #ffffff;
             .container-mine{
                 position: relative;
                 .toggle-buttons{
@@ -181,7 +191,7 @@ main{
                     flex-wrap: wrap;
                     gap: 20px;
                     .card{
-                        width: calc(100% / 4 - 15px);
+                        width: calc(100% / 3 - 15px);
                     }
                     &.rent{
                         .for-sale{
@@ -203,51 +213,76 @@ main{
             }
         }
         &#about-us{
-            background: #102624;
+            background: url(../img/contact-bg.jpg);
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            &::before{
+                content: "";
+                background-color: rgb(255 255 255 / 89%);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
             .container-mine{
+                position: relative;
+                z-index: 100;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .main-title{
+                    white-space: nowrap;
+                }
                 .content{
                     .desc{
                         display: flex;
                         align-items: center;
-                        justify-content: center;
-                        margin-bottom: 102px;
+                        justify-content: flex-end;
+                        margin-bottom: 99px;
                         p{
-                            width: 60%;
-                            text-align: center;
+                            width: calc(100% - 420px);
+                            text-align: left;
+                            color: #000 !important;
                         }
                     }
                     .img-wrapper{
                         position: relative;
                         width: calc(100% - 400px);
-                        margin: auto;
+                        margin-left: auto;
                         .about-items{
-                            width: 80%;
+                            width: 100%;
                             height: 170px;
-                            position: absolute;
-                            background: linear-gradient(0deg, rgb(20, 46, 43), rgb(36, 75, 71));
+                            position: relative;
+                            // background: linear-gradient(0deg, rgb(20, 46, 43), rgb(36, 75, 71));
                             left: 50%;
                             transform: translateX(-50%);
-                            top: -80px;
+                            // top: -80px;
                             border-radius: 10px;
-                            box-shadow: 0px 9px 10px #00000036;
-                            border: 1px solid #00000008;
+                            // box-shadow: 0px 9px 10px #00000036;
+                            // border: 1px solid #00000008;
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
                             .item{
                                 display: flex;
                                 width: calc(100% / 2);
+                                flex-direction: column;
                                 gap: 20px;
                                 height: fit-content;
-                                align-items: center;
+                                align-items: flex-start;
                                 justify-content: center;
                                 padding: 0 21px;
+                                text-align: center;
                                 .icon-wrapper{
                                     width: 100px;
                                     height: 100px;
                                     min-height: 100px;
                                     min-width: 100px;
-                                    background: #e7e7e7;
+                                    background: #ffffff;
                                     border-radius: 100px;
                                     display: flex;
                                     align-items: center;
@@ -261,7 +296,14 @@ main{
                                     flex-direction: column;
                                     align-items: flex-start;
                                     margin-bottom: unset;
-                                    color: #fff;
+                                    color: #000000;
+                                    text-align: left;
+                                    .text-gold{
+                                        background: linear-gradient(176deg, rgb(159, 129, 41) 0%, rgb(223 178 10) 46%, rgb(171, 132, 50) 100%);
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                        font-size: 20px !important;
+                                    }
                                     div{
                                         width: 90%;
                                         white-space: wrap;
@@ -280,6 +322,7 @@ main{
                         img{
                             width: 100%;
                             border-radius: 20px;
+                            display: none;
                         }
                     }
                 }
@@ -387,12 +430,74 @@ main{
                     }
                     &:hover{
                         .contact-icon{
-                            // background: ;
+                            background: #234a46;
                             color: #fff;
                         }
                         span{
                             color: #000;
                         }
+                    }
+                }
+            }
+        }
+        &.mt-wide{
+            margin-top: 80px;
+        }
+        &.property-overview{
+            .desc{
+                display: flex;
+                gap: 50px;
+                margin-top: 70px;
+                .left-side{
+                    text-align: left;
+                    width: calc(100% / 2);
+                    .overview{
+                        margin-bottom: 20px;
+                        h3{
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .details{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        margin-bottom: 30px;
+                        .item{
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            .icon-wrapper{
+                                width: 40px;
+                                height: 40px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: 1px solid rgb(0 0 0 / 9%);
+                                border-radius: 5px;
+                                font-size: 20px;
+                                color: #7c7c7c;
+                            }
+                        }
+                    }
+                    .price{
+                        margin-bottom: 40px;
+                        p{
+                            font-size: 30px !important;
+                            font-weight: 600;
+                            color: #d86161;
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                }
+                .map{
+                    overflow: hidden;
+                    width: calc(100% / 2);
+                    border-radius: 15px;
+                    height: 500px;
+                    iframe{
+                        width: 100%;
+                        height: 100%;
                     }
                 }
             }

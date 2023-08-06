@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1568 Reality | Home</title>
+    <title>1568 Reality | Taguig Property 1</title>
 
     <!-- css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -12,24 +12,27 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/photoswipe.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- scripts -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/aos.js"></script>
+    <!-- <script type="text/javascript" src="js/photoswipe.js"></script>
+    <script type="text/javascript" src="js/unpkg.com_photoswipe.js"></script> -->
 </head>
 <body>
-    <header>
+    <header class="with-bg">
         <div class="container-mine">
             <img class="top-logo" src="img/logo-dark.png" alt="Website Logo">
             <ul class="top-nav">
                 <li>
                     <a href="#main-view" class="text-light" data-section="main-view">Home</a>
                 </li>
-                <li>
-                    <a href="#all-products" class="text-light" data-section="all-products">Properties</a>
-                </li>
+                <!-- <li>
+                    <a href=".all-products" class="text-light" data-section="all-products">Property</a>
+                </li> -->
                 <li>
                     <a href="#about-us" class="text-light" data-section="about-us">About Us</a>
                 </li>
@@ -40,83 +43,176 @@
                     <a href="#contact" class="text-light" data-section="contact">Contact</a>
                 </li>
             </ul>
-            <a href="javascript:void(0)" class="btn nav-toggle one text-gold">
+            <a href="javascript:void(0)" class="btn nav-toggle two text-gold">
                 <i class="fa-solid fa-bars"></i>
             </a>
         </div>
     </header>
     <main>
-        <section id="main-view">
+        <section class="property-overview mt-wide">
             <div class="container-mine">
-                <div class="left-side">
-                    <div class="tag-line">
-                        <h1 class="text-gold">Welcome to 1568 Realty!</h1>
-                        <span>Unlock Your Dream Home with us</span>
+                <div class="flex item-center space-between">
+                    <div class="main-title" data-aos="fade-up">
+                        <h1>Taguig property 1</h1>
+                        <span>Bagumbayan Taguig City Metro Manila</span>
                     </div>
-                    <div class="stats">
-                        <div class="stat one">
-                            <h3 class="text-gold"><span id="customers"></span>K+</h3>
-                            <span>Customers</span>
+                </div>
+                <div class="property-gallery" id="my-gallery">
+                    <div>
+                        <a
+                        href="./img/taguig1/Property 1_Backyard 2.jpg"
+                        data-pswp-width="1058"
+                        data-pswp-height="705"
+                        target="_blank"
+                        >
+                        <img
+                            src="./img/taguig1/Property 1_Backyard 2.jpg"
+                            alt="Backyard"
+                        />
+                        </a>
+                    </div>
+                    <div class="more-img">
+                        <div>
+                            <a
+                            href="./img/taguig1/Property 1_Front.jpg"
+                            data-pswp-width="1058"
+                            data-pswp-height="705"
+                            target="_blank"
+                            >
+                            <img
+                                src="./img/taguig1/Property 1_Front.jpg"
+                                alt="Facade"
+                            />
+                            </a>
                         </div>
-                        <!-- <div class="stat one">
-                            <h3 class="text-gold"><span id="products"></span>K+</h3>
-                            <span>Properties</span>
-                        </div> -->
-                        <div class="stat one">
-
-                            <h3 class="text-gold"><span id="inquiries"></span>+</h3>
-                            <span>Daily Inquiries</span>
+                        <div>
+                            <a
+                            href="./img/taguig1/Property 1_KitchenArea.jpg"
+                            data-pswp-width="1058"
+                            data-pswp-height="705"
+                            target="_blank"
+                            >
+                            <img
+                                src="./img/taguig1/Property 1_KitchenArea.jpg"
+                                alt="Kitchen Area"
+                            />
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                            href="./img/taguig1/Property 1_LivingRoom.jpg"
+                            data-pswp-width="1058"
+                            data-pswp-height="705"
+                            target="_blank"
+                            >
+                            <img
+                                src="./img/taguig1/Property 1_LivingRoom.jpg"
+                                alt="Living Room"
+                            />
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                            href="./img/taguig1/Property1_Backyard 1.jpg"
+                            data-pswp-width="1058"
+                            data-pswp-height="705"
+                            target="_blank"
+                            >
+                            <img
+                                src="./img/taguig1/Property1_Backyard 1.jpg"
+                                alt="Backyard 2"
+                            />
+                            </a>
+                        </div>
+                        <div class="hidden">
+                            <a
+                            href="./img/taguig1/lot-plan1.jpg"
+                            data-pswp-width="500"
+                            data-pswp-height="700"
+                            target="_blank"
+                            >
+                            <img
+                                src="./img/taguig1/lot-plan1.jpg"
+                                alt="Lot Plan"
+                            />
+                            </a>
+                        </div>
+                        <div class="hidden">
+                            <a
+                            href="./img/taguig1/lot-plan2.jpg"
+                            data-pswp-width="500"
+                            data-pswp-height="500"
+                            target="_blank"
+                            >
+                            <img
+                                src="./img/taguig1/lot-plan2.jpg"
+                                alt="Lot Plan 2"
+                            />
+                            </a>
+                        </div>
+                        <div class="hidden">
+                            <a
+                            href="./img/taguig1/lot-plan3.jpg"
+                            data-pswp-width="500"
+                            data-pswp-height="500"
+                            target="_blank"
+                            >
+                            <img
+                                src="./img/taguig1/lot-plan3.jpg"
+                                alt="Lot Plan 3"
+                            />
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="owl-carousel main-slide owl-theme">
-                    <div class="item">
-                        <img src="img/taguig1/Property 1_LivingRoom.jpg">
-                    </div>
-                    <div class="item">
-                        <img src="img/taguig2/Property2_LivingRoom.jpg">
-                    </div>
-                    <div class="item">
-                        <img src="img/katipunan/Property3_Kitchen.jpg">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <section id="featured">
-            <div class="container-mine">
-                <div class="main-title" data-aos="fade-up">
-                    <h1>Featured Homes</h1>
-                    <span>Here are some of our best homes</span>
-                </div>
-                <div class="owl-carousel featured-slide owl-theme">
-                    <a class="item" data-aos="flip-left">
-                        <div class="feat-item">
-                            <img src="img/slide1.jpg">
-                            <h4>El Jardin del Presidente</h4>
-                            <span>South Triangle Quezon City Manila</span>
+                  </div>
+                <div class="desc">
+                    <div class="left-side">
+                        <div class="price">
+                            <!-- <h3>Price</h3> -->
+                            <p>₱ 12,000,000</p>
                         </div>
-                    </a>
-                </div>
-            </div>
-        </section> -->
-        <section id="all-products">
-            <div class="container-mine">
-                <div class="main-title" data-aos="fade-up">
-                    <h1>Our Properties</h1>
-                    <span>Explore our properties</span>
-                </div>
-                <!-- <div class="toggle-buttons">
-                    <button data-val="all" class="active">All</button>
-                    <button data-val="sale">For Sale</button>
-                    <button data-val="rent" disabled>For Rent</button>
-                </div> -->
-                <div class="products-cotainer">
+                        <div class="overview">
+                            <h3>Overview</h3>
+                            <p>
+                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+                            </p>
+                        </div>
+                        <div class="details">
+                            <div class="item">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-ruler"></i>
+                                </div>
+                                <span>140 sqft</span>
+                            </div>
+                            <div class="item">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-bath"></i>
+                                </div>
+                                <span>2 bathrooms</span>
+                            </div>
+                            <div class="item">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-bed"></i>
+                                </div>
+                                <span>4 beds</span>
+                            </div>
+                            <div class="item">
+                                <div class="icon-wrapper">
+                                    <i class="fa-solid fa-warehouse"></i>
+                                </div>
+                                <span>1 garage</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15452.5956045067!2d121.04647137807319!3d14.476137888108129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cfa4afd8f41b%3A0xd48e183dc204b5cc!2sBagumbayan%2C%20Taguig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1690025335897!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="about-us">
             <div class="container-mine">
-                <div class="main-title center" data-aos="fade-up">
+                <div class="main-title" data-aos="fade-up">
                     <h1 class="">About Us</h1>
                     <!-- <span>We're on a Mission to Change View of Real Estate Field.</span> -->
                 </div>
@@ -132,7 +228,8 @@
                                 </div>
                                 <div class="desc">
                                     <h4 class="title text-gold">
-                                        Hassle free                                    </h4>
+                                        Hassle free
+                                    </h4>
                                     <div class="">
                                         Stress-free transactions, expert guidance, and unique understanding by our dedicated agents.
                                     </div>
@@ -247,10 +344,6 @@
     </button>
     <!-- layout script -->
     <script  type="text/javascript" src="js/layout.js"></script>
-    <script  type="text/javascript">
-        numCounter("customers",6,100);
-        numCounter("products",10,150);
-        numCounter("inquiries",10,100);
-    </script>
+    <script  type="module" src="js/lightbox.js"></script>
 </body>
 </html>

@@ -25,7 +25,7 @@
                 .container-mine{
                     .content{
                         .img-wrapper{
-                            width: 100%;
+                            // width: 100%;
                         }
                     }
                 }
@@ -59,7 +59,7 @@
 
 @media(max-width:1280px){
     .container-mine{
-        max-width: calc(100% - 50px);
+        max-width: calc(100% - 15px);
     }
     main{
         section{
@@ -75,6 +75,13 @@
                                     text-align:center;
                                     max-width: 100%;
                                     font-size: 46px;
+                                }
+                                span{
+                                    text-align: center;
+                                    width: 100%;
+                                    display: block;
+                                    line-height: 1.2;
+                                    margin-top: 10px;
                                 }
                             }
                             &.owl-carousel{
@@ -94,29 +101,38 @@
             }
             &#about-us{
                 .container-mine{
+                    gap: 83px;
                     .content{
                         .img-wrapper{
+                            margin-left: unset;
+                            width: 100%;
                             .about-items{
-                                width: 90%;
+                                width: 100%;
                                 .item{
                                     padding: 10px;
                                     flex-direction: column;
                                     gap: 8px;
-                                    .icon-wrapper{
-                                        width: 50px;
-                                        height: 50px;
-                                        min-height: 50px;
-                                        min-width: 50px;
-                                        font-size: 20px;
-                                    }
-                                    .desc{
-                                        font-size: 12px;
-                                        align-items: center;
-                                        div{
-                                            text-align: center;
-                                        }
-                                    }
+                                    // .icon-wrapper{
+                                    //     width: 50px;
+                                    //     height: 50px;
+                                    //     min-height: 50px;
+                                    //     min-width: 50px;
+                                    //     font-size: 20px;
+                                    // }
+                                    // .desc{
+                                    //     font-size: 12px;
+                                    //     align-items: center;
+                                    //     div{
+                                    //         text-align: center;
+                                    //     }
+                                    // }
                                 }
+                            }
+                        }
+                        .desc{
+                            justify-content: flex-start;
+                            p{
+                                width: 100%;
                             }
                         }
                     }
@@ -155,12 +171,13 @@
         .modal-wrapper{
             .content{
                 flex-direction: column;
+                flex-wrap: nowrap;
                 padding: 15px;
                 .slide{
                     width: 100%;
                     .modal-slide{
                         width: 100%;
-                        height: 252px;
+                        height: fit-content;
                         .item{
                             width: 100%;
                             height: 100%;
@@ -168,6 +185,58 @@
                                 height: 100%;
                                 width: 100%;
                             }
+                        }
+                    }
+                }
+                .details{
+                    width: 100%;
+                    .top{
+                        margin-bottom: 40px;
+                    }
+                    .location{
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+    .property-gallery{
+        flex-direction: column;
+        div{
+            &:first-child{
+                width: 100%;
+                height: 400px;
+            }
+        }
+        .more-img{
+            width: 100%;
+            div{
+                width: calc(100% / 2 - 5px);
+                height: 239px;
+            }
+        }
+    }
+    main{
+        section{
+            &.property-overview{
+                .desc{
+                    flex-direction: column;
+                    .left-side{
+                        width: 100%;
+                    }
+                    .map{
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+            }
+            &#about-us{
+                .container-mine{
+                    gap: 20px;
+                    flex-direction: column;
+                    .content{
+                        .desc{
+                            margin-bottom: 40px;
                         }
                     }
                 }
@@ -198,11 +267,18 @@
                     }
                 }
             }
+            .main-title{
+                h1{
+                    font-size: 23px;
+                    font-weight: 700;
+                }
+            }
         }
     }
 }
 @media(max-width:727px){
     main section{
+        padding: 37px 0;
         &#main-view{
             .container-mine{
                 .left-side{
@@ -243,7 +319,7 @@
                             position: relative;
                             top: -40px;
                             box-shadow:unset;
-                            padding: 20px;
+                            padding: 0;
                             .item{
                                 width: 100%;
                             }
@@ -279,6 +355,7 @@
             .nav-toggle{
                 display: block;
                 font-size: 31px;
+                padding: 0;
             }
         }
     }
@@ -315,8 +392,7 @@
     }
 }
 
-
-@media(max-width:527px){
+@media(max-width:550px){
     main{
         section{
             &#main-view{
@@ -366,6 +442,50 @@
             &#faqs{
                 &::before{
                     left: 0;
+                }
+                .container-mine{
+                    .main-title{
+                        margin-bottom: 40px;
+
+                    }
+                }
+            }
+            &.property-overview{
+                .desc{
+                    .left-side{
+                        .price{
+                            margin-bottom: 10px;
+                        }
+                        .details{
+                            flex-wrap: wrap;
+                            .item{
+                                flex-wrap: nowrap;
+                                width: calc(100% / 2 - 10px);
+                                span{
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &#about-us{
+                .container-mine{
+                    .content{
+                        .img-wrapper{
+                            .about-items{
+                                .item{
+                                    .icon-wrapper{
+                                        width: 68px;
+                                        height: 68px;
+                                        min-height: 68px;
+                                        min-width: 68px;
+                                        font-size: 27px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -428,6 +548,18 @@
     }
     .container-mine {
         max-width: calc(100% - 6px);
+    }
+    .property-gallery{
+        div{
+            &:first-child{
+                height: 250px;
+            }
+        }
+        .more-img{
+            div{
+                height: 149px;
+            }
+        }
     }
 }
 
