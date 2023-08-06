@@ -7,7 +7,7 @@ const cardItems = [
         price:'99,999',
         beds:2,
         bathroom:2,
-        to:'overview1.html',
+        to:'taguig1.html',
         imgs:[
             {img:'img/taguig1/Property 1_LivingRoom',title:'Living Room'},
             {img:'img/taguig1/Property 1_Backyard 2',title:'Backyard 1'},
@@ -24,7 +24,7 @@ const cardItems = [
         price:'99,999',
         beds:2,
         bathroom:2,
-        to:'overview2.html',
+        to:'taguig2.html',
         imgs:[
             {img:'img/taguig2/Property2_Alley',title:'Alley'},
             {img:'img/taguig2/Property2_Downstairs',title:'Downstairs'},
@@ -53,7 +53,7 @@ const cardItems = [
         price:'99,999',
         beds:2,
         bathroom:2,
-        to:'overview3.html',
+        to:'katipunan.html',
         imgs:[
             {img:'img/katipunan/Property3_ComfortRoom1',title:'Comfort Room'},
             {img:'img/katipunan/Property3_Garage',title:'Garage'},
